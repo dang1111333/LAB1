@@ -1,0 +1,22 @@
+  CALL    scripts/checksyscalls.sh
+  CALL    scripts/atomic/check-atomics.sh
+  CC      init/main.o
+/tmp/ccswRPhN.s: Assembler messages:
+/tmp/ccswRPhN.s:4352: Error: selected processor does not support `cpsid i' in ARM mode
+/tmp/ccswRPhN.s:5209: Error: selected processor does not support `cpsid i' in ARM mode
+/tmp/ccswRPhN.s:5501: Error: selected processor does not support `cpsie i' in ARM mode
+/tmp/ccswRPhN.s:5668: Error: selected processor does not support `dsb ' in ARM mode
+/tmp/ccswRPhN.s:6174: Error: selected processor does not support `cpsie i' in ARM mode
+/tmp/ccswRPhN.s:6765: Error: selected processor does not support `cpsid i' in ARM mode
+/tmp/ccswRPhN.s:6812: Error: selected processor does not support `dmb ishst' in ARM mode
+/tmp/ccswRPhN.s:6858: Error: selected processor does not support `dmb ishst' in ARM mode
+/tmp/ccswRPhN.s:6942: Error: selected processor does not support `dmb ish' in ARM mode
+/tmp/ccswRPhN.s:6963: Error: selected processor does not support `dsb ishst' in ARM mode
+/tmp/ccswRPhN.s:6967: Error: selected processor does not support `sev' in ARM mode
+/tmp/ccswRPhN.s:7061: Error: architectural extension `mp' is not allowed for the current base architecture
+/tmp/ccswRPhN.s:7062: Error: selected processor does not support `pldw [r4]' in ARM mode
+/tmp/ccswRPhN.s:7065: Error: selected processor does not support `pld [r4]' in ARM mode
+/tmp/ccswRPhN.s:7079: Error: selected processor does not support `ldrex r3,[r4]' in ARM mode
+/tmp/ccswRPhN.s:7081: Error: selected processor does not support `strex r1,r2,[r4]' in ARM mode
+make[1]: *** [scripts/Makefile.build:277: init/main.o] Error 1
+make: *** [Makefile:1868: init] Error 2
